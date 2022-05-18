@@ -1,7 +1,12 @@
 # Maven
-- task: PowerPlatformToolInstaller@0
+- task: PowerPlatformExportSolution@0
   inputs:
-    DefaultVersion: true
+    authenticationType: 'PowerPlatformEnvironment'
+    PowerPlatformEnvironment: 'DEV - Generic'
+    SolutionName: 'BGDemo'
+    SolutionOutputFile: 'BGDemo'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
 - task: PowerPlatformToolInstaller@0
   inputs:
     DefaultVersion: true

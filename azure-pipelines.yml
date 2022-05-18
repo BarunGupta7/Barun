@@ -1,4 +1,7 @@
 # Maven
+- task: PowerPlatformToolInstaller@0
+  inputs:
+    DefaultVersion: true
 - task: CmdLine@2
   inputs:
     script: |
